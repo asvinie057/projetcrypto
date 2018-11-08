@@ -9,9 +9,18 @@ class StartScrap
   def perform
 
     @prices = get_prices
+   Cryptomonnaie.delete_all
+   save
   end
 
+
   def save
+    @prices.each do |k, v|
+      cryptomonnaie = Cryptomonnaie.new   
+      cryptomonnaie.name = k
+      cryptomonnaie.value = v
+      cryptomonnaie.save
+    end
   end
 
   def get_prices
