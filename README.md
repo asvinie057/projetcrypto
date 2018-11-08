@@ -14,7 +14,7 @@
  <li>Faites un git clone
  <li>Faites un bundle install
  <li>lancer rails server sur votre console
- <li> aller sur localhost:3000
+ <li> aller sur localhost:3000 ou aller sur <a href="https://cryptoasvinie.herokuapp.com/">Heroku</a>
   </li>
 
 </ol>
