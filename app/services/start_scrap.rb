@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class StartScrap
   def initialize(url='https://coinmarketcap.com/all/views/all/')
     @url = url
@@ -23,4 +25,6 @@ class StartScrap
     end
     prices = Hash[names.zip(values)]
     prices
-  end
+  
+end
+end
