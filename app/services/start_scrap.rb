@@ -15,6 +15,7 @@ class StartScrap
 
 
   def save
+    
     @prices.each do |k, v|
       cryptomonnaie = Cryptomonnaie.new   
       cryptomonnaie.name = k

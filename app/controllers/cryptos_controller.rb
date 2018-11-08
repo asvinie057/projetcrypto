@@ -5,5 +5,6 @@ class CryptosController < ApplicationController
 
   def search
   	@crypto = Cryptomonnaie.find_by_name(params[:name])
+  	puts @crypto.value
   	end
 end
