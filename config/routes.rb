@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-	root 'cryptos#index'
+
+  get 'home/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  #get '', to: 'cryptos#index'
+  get '/crypto', to: 'cryptos#index'
+  get '', to: 'home#index'
 end
