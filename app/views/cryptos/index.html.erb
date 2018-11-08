@@ -1,5 +1,23 @@
-<% @crypto.each do |currency,value| %>
 
-<h2> <%= currency %> </h2>
-<p><%= value %></p>
-<% end %>
+<table>
+  <tr>
+       <th>Currency name</th>
+       <th>Currency value</th>
+  </tr>
+  <% @crypto.each do |currency, value|%>
+  <tr>
+       <td> <%= currency %>
+       <td> <%= value %>
+  </tr>
+  <% end %>
+</table>
+
+
+<table class="table table-hover">
+  <thead>
+ <tr class="table-info">
+      <th scope="row">Info</th>
+      <td>Column content</td>
+    </tr>
+ </thead>
+</table> 
